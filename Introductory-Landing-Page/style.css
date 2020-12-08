@@ -1,0 +1,265 @@
+/*CSS Diresction
+Header
+Main
+Container
+Section
+Artical
+Footer
+Socials
+Autours
+Responsive
+*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+/*Body Part */
+html,body{
+	width: 1280px;
+	height: 800px;
+	max-width: 100%;
+	background-image: url(images/bg-desktop.svg);
+	background-color: hsl(257, 50%, 40%);
+	color: white;
+	font-family: 'Open+Sans',sans-serif;
+	font-weight: 400;
+	font-size: 1.5vw;
+}
+/*Header*/
+header{
+	width: 100%;
+}
+img.logo{
+	margin: 2.25em 7em;
+	width: 25%;
+}
+/*Main*/
+.main{
+	width: 100%;
+	margin: 0.5em;
+}
+.container{
+	width: 100%;
+	max-width: 100%;
+	padding: 0 1em;
+	margin: 0 auto;
+}
+.main .container{
+	width: 100%;
+	max-width: 100%;
+	padding: 0 1em;
+	margin: 0 auto;
+}
+/*Section*/
+section{
+	width: 50%;
+	float: left;
+}
+img.illustration{
+	width: 100%;
+	max-width: 100%;
+}
+/*Artical*/
+article{
+	width: 47%;
+	float: left;
+	margin-left: 3%;
+}
+article h1{
+	font-family: 'Poppins',sans-serif;
+	font-weight: 600;
+	font-size: 3vw;
+	margin-top: 1em;
+	letter-spacing: 0.06em;
+}
+article p{
+	margin: 2em 0;
+	font-family: sans-serif;
+	font-weight: unset;
+}
+p{
+    display: block;
+   /* margin-block-start: 1em;
+    margin-block-end: 1em;*/
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+article button{
+	width: 12.50em;
+	height: 3.75em;
+	background-color: #fff;
+	color: hsl(257, 50%, 40%);
+	font-weight: normal;
+	border-radius: 1.56em;
+	letter-spacing: 0.06em;
+	border: none;
+	box-shadow: hsl(255, 33%, 49%);
+	outline: none;
+}
+article button:hover{
+	background-color: hsl(291, 55.3%, 64%);
+	color: #fff;
+	transform: 2s;
+}
+/*Footer*/
+footer{
+	width: 100%;
+	clear: both;
+	padding-top: 1.56em;
+}
+/*Socials*/
+.socials{
+	width: 18.75em;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+	display: inline-block;
+	width: 2.5em;
+	height: 2.5em;
+	border-radius: 50%;
+	border: 0.06em solid #fff;
+	position: relative;
+	margin: 0 0.44em ;
+}
+li a{
+	position: absolute;
+	top: -0.35em;
+	left: -0.2em;
+	padding: 1em;
+}
+a{
+	cursor: pointer;
+}
+li i{
+	color: #fff;
+	font-size: 1.25em;
+}
+.social-item:hover{
+	background-color: hsl(291.5, 55.3%, 64.9%);
+	color: #fff;
+	transition: 2s;
+	animation: BigOne 2s;
+}
+@keyframes BigOne{
+	0%   {transform: scale(.8);}
+	100% {transform: scale(1.5);}
+}
+.social-link:hover{
+	animation: itemAnimation 2s;
+}
+@keyframes itemAnimation{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+.attribution{
+	text-align: center;
+	font-size: 1.2vw;
+}
+footer p{
+	clear: both;
+}
+.attribution a{
+	color: hsl(228, 46%, 32%);
+	background-color: rgba(255, 255, 255, 0.397);
+	border-radius: 25%;
+}
+.attribution a:hover{
+	display: inline-block;
+	transform: scaleY(1.5);
+}
+/*Resposive*/
+@media(max-width:84.375em){
+	html,body{
+		width: 100vw;
+		background-image: url(images/bg-desktop.svg);
+	}
+	img.logo{
+		width: 25%;
+		margin: 2.5em 10em;
+	}
+	section{
+		max-width: 40%;
+	}
+	article{
+		max-width: 55%;
+		margin-left: 3%;
+	}
+	article h1{
+		margin-top: 0;
+		font-size: 2.5vw;
+	}
+	article p{
+		font-size: 2.5vw;
+	}
+}
+@media(max-width:48.063em){
+	html,body{
+		width: 100%;
+		background-image: url(images/bg-desktop.svg);
+	}
+	img.logo{
+		width: 37%;
+		margin: 2.5em 1em;
+	}
+	.main{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.main .container{
+		padding: 0;
+	}
+	section{
+		max-width: 80%;
+		float: none;
+		margin: 1.88em auto;
+	}
+	article{
+		width: 80%;
+		float: none;
+		margin: 1.88em auto;
+	}
+	article h1{
+		font-weight: 700;
+		font-size: 3.5vw;
+		margin-top: 0;
+		padding-top: 1.88em;
+		letter-spacing: 0;
+		text-align: center;
+	}
+	article p{
+		font-size: 2.8vw;
+		text-align: center;
+		margin: 1.88em 0;
+	}
+	article button{
+		width: 12.50em;
+		height: 2.50em;
+		font-size: 2.8vw;
+		letter-spacing: 0;
+		margin: 0 auto;
+		display: block;
+	}
+	footer{
+		padding-top: 0;
+	}
+	.socials{
+		margin: 3.75em auto 2.50em;
+		float: none;
+		text-align: center;
+	}
+	li{
+		width: 4em;
+		height: 4em;
+		margin: 0 0.14em;
+	}
+	li a{
+		top:0.1em;
+		left: 0.3em;
+	}
+	li i{
+		font-size: 2.5vw;
+	}
+}
